@@ -1,0 +1,15 @@
+{"id": "q_001", "answer_ids": ["B", "C"], "abstain": false}
+{"id": "q_002", "answer_ids": ["A", "C"], "abstain": false}
+{"id": "q_003", "answer_ids": ["B", "C"], "abstain": false}
+{"id": "q_004", "answer_ids": ["B", "C"], "abstain": false}
+{"id": "q_005", "answer_ids": ["A", "B"], "abstain": false}
+{"id": "q_006", "answer_ids": ["A", "D"], "abstain": false}
+{"id": "q_007", "answer_ids": ["C"], "abstain": false}
+{"id": "q_008", "answer_ids": ["B"], "abstain": false}
+{"id": "q_009", "answer_ids": ["A", "C"], "abstain": false}
+{"id": "q_010", "answer_ids": ["A", "B", "D"], "abstain": false}
+{"id": "q_011", "answer_ids": ["A", "C"], "abstain": false}
+{"id": "q_012", "answer_ids": ["A", "C"], "abstain": false}
+{"id": "q_013", "answer_ids": [], "abstain": true}
+{"id": "q_014", "answer_ids": [], "abstain": true}
+{"id": "q_015", "answer_ids": [], "abstain": true}

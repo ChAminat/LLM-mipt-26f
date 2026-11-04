@@ -1,0 +1,31 @@
+{
+  "embedding": {
+    "model": "intfloat/multilingual-e5-small",
+    "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3"
+  },
+  "llm": {
+    "base_url_env": "LLM_BASE_URL",
+    "model_env": "LLM_MODEL",
+    "api_key_env": "LLM_API_KEY",
+    "submission_id_env": "SUBMISSION_ID",
+    "temperature": 0,
+    "max_tokens": 2048
+  },
+  "retrieval": {
+    "top_k": 6,
+    "candidates": 12,
+    "rrf_k": 60
+  },
+  "limits": {
+    "max_llm_calls_per_question": 4,
+    "max_input_tokens_per_question": 16384,
+    "max_output_tokens_per_question": 4096,
+    "max_single_request_tokens": 8192
+  },
+  "experiments": {
+    "use_bm25": true,
+    "use_dense": true,
+    "use_neighbors": true,
+    "use_context": true
+  }
+}

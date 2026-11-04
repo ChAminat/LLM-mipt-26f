@@ -1,0 +1,6 @@
+name,answer_accuracy,Q,mean_input_tokens,mean_output_tokens,mean_llm_calls,mean_cost,median_latency_ms
+baseline_no_context,0.6,,300.7,255.9,1.13,1614.5,14633
+rag_one_search,0.8,0.8167,3798.9,260.3,1.4,5198.3,24675
+final,0.7333,0.7,3189.5,240.7,1.27,4476.7,28446
+ablation_no_dense,0.8,0.8042,3251.6,273.1,1.33,4685.5,28415
+ablation_no_neighbors,0.8,0.7708,3303.7,308.2,1.27,4860.8,25631

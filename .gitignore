@@ -1,0 +1,16 @@
+RAG_data/
+*.pdf
+corpus.jsonl
+index/
+cache/
+*.npy
+*.pkl
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+experiments/
+experiments/*_answers.jsonl
+experiments/*_trace.jsonl
+trace*.jsonl
+api_ledger_*.jsonl
