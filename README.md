@@ -90,7 +90,7 @@ python predict_on_host.py \
 Качество проверяется против эталонов:
 
 ```bash
-python evaluate.py --answers ./answers.jsonl --gold dev_gold.jsonl
+python evaluate.py --answers ./answers.jsonl --gold questions_and_golds_set/dev_gold.jsonl
 ```
 
 Печатается таблица «эталон / ответ / совпало», accuracy и `Q` по 4 категориям. Наконец, эксперименты — 5 конфигураций через `predict.py`, ~40 минут, результат в `experiments.csv`:
@@ -98,8 +98,8 @@ python evaluate.py --answers ./answers.jsonl --gold dev_gold.jsonl
 ```bash
 python run_experiments.py \
     --index ./index \
-    --questions dev_questions.jsonl \
-    --gold dev_gold.jsonl \
+    --questions questions_and_golds_set/dev_questions.jsonl \
+    --gold questions_and_golds_set/dev_gold.jsonl \
     --config config.json \
     --workdir experiments
 ```
