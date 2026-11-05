@@ -10,23 +10,29 @@
 
 ```text
 .
-├── parse_corpus.py          # PDF → corpus.jsonl
-├── build_index.py           # corpus.jsonl → index/
-├── predict.py               # локальный запуск Qwen3.5-4B (Hugging Face, 4-bit)
-├── predict_on_host.py       # HTTP-режим через OpenAI-совместимый endpoint
-├── evaluate.py              # оценка против dev_gold.jsonl
-├── run_experiments.py       # 5 конфигураций + experiments.csv
-├── config.json              # параметры моделей, retrieval, лимиты
+├── parse_corpus.py              # PDF → corpus.jsonl
+├── build_index.py               # corpus.jsonl → index/
+├── predict.py                   # локальный запуск Qwen3.5-4B (Hugging Face, 4-bit)
+├── predict_on_host.py           # HTTP-режим через OpenAI-совместимый endpoint
+├── evaluate.py                  # оценка против gold-файлов
+├── run_experiments.py           # 5 конфигураций + experiments.csv
+├── config.json                  # параметры моделей, retrieval, лимиты
 ├── requirements.txt
-├── dev_questions.jsonl      # 15 dev-вопросов
-├── dev_gold.jsonl
-├── dev_answers.jsonl
-├── dev_trace.jsonl
-├── own_questions.jsonl      # 8 авторских вопросов
-├── own_gold.jsonl
-├── experiments.csv
 ├── report.md
-└── README.md
+├── README.md
+│
+├── examples_of_module_output/   # примеры выхода модуля
+│   ├── dev_answers.jsonl        # итоговый прогон итоговой системы
+│   └── dev_trace.jsonl          # трейс вызовов LLM (calls, tokens, время)
+│
+├── experiments_result/          # результаты прогонов экспериментов
+│   └── experiments.csv          # 5 конфигураций: baseline, RAG, final, 2 абляции
+│
+└── questions_and_golds_set/     # вопросы и эталоны
+    ├── dev_questions.jsonl      # 15 dev-вопросов (формат задания)
+    ├── dev_gold.jsonl           # эталоны для dev
+    ├── own_questions.jsonl      # 8 авторских вопросов
+    └── own_gold.jsonl           # эталоны для авторских вопросов
 ```
 ## Быстрый запуск
 Клонируем репозиторий и переходим в папку проекта:
